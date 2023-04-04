@@ -1,0 +1,24 @@
+{
+  "name": "rollup-starter",
+  "private": true,
+  "version": "0.1.7",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c --compact --environment NODE_ENV:production",
+    "preview": "http-server dist -a localhost -g -o"
+  },
+  "dependencies": {
+    "@cps-elements/web": "^0.1.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-url": "^8.0.1",
+    "http-server": "^14.1.1",
+    "rollup": "^3.20.2",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-css-only": "^4.3.0",
+    "rollup-plugin-generate-html-template": "^1.7.0",
+    "rollup-plugin-serve": "^2.0.2"
+  }
+}
