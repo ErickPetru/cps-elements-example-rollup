@@ -4,17 +4,15 @@ Um modelo de configuração mínima demonstrando como importar componentes [CPS 
 
 > **CPS Elements** é parte do projeto de UI/UX institucional, que também sustenta o [CPS Design System](https://cpsrepositorio.github.io/cps-design-system/), projetados originalmente pelo professor [Erick Petrucelli](https://github.com/ErickPetru). Independentemente de suas origens e motivações iniciais, é um projeto totalmente _open-source_ disponível sob os termos da licença [MIT](https://github.com/cpsrepositorio/cps-elements/blob/main/LICENSE.md).
 
-Em sua versão 5, o Rollup avançou no suporte a [módulos JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Modules) nativos (também conhecidos como _ES modules_) sem necessitar de configurações em especial sendo realmente necessária para o uso dos Web Components do CPS Elements.
+Em sua versão 3, o Rollup avançou no suporte a [módulos JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Modules) nativos (também conhecidos como _ES modules_), sem necessitar de configurações em especial para o uso dos Web Components do CPS Elements.
 
-Assim, este exemplo foca em demonstrar um conjunto opinativo de configurações uteis no [rollup.config.js](./rollup.config.js), tanto para desenvolvimento quanto para publicação de aplicações com Rollup 5, contendo diversos ajustes sobre carregamento de HTML, CSS, SVG, bem como o empacotamento JavaScript.
+Assim, este exemplo foca em demonstrar um conjunto opinativo de configurações uteis no [rollup.config.js](./rollup.config.js), tanto para desenvolvimento quanto para publicação de aplicações com Rollup 3, contendo diversos ajustes sobre carregamento de HTML, CSS, SVG, bem como o empacotamento JavaScript.
 
-Opcionalmente, recursos como ícones podem carregados pela instalação local com o _bundler_ ao invés de serem carregados por CDN. Para tal, a única configuração Rollup necessária é copiar os ícones de `node_modules/@cps-elements/web/assets` para a pasta `dist/assets` da distribuição empacotada do projeto, através do `copy-rollup-plugin`.
+Opcionalmente, recursos podem carregados pela instalação local com o _bundler_ ao invés de serem carregados por CDN. Para tal, a única configuração Rollup necessária é copiar os ícones de `node_modules/@cps-elements/web/assets` para `dist/assets` da distribuição empacotada, através do `rollup-plugin-copy`.
 
 Observe que Rollup pode ser usado com _frameworks_ JavaScript, onde configurações extras podem ser necessárias. Mas para utilização com Web nativa, ou seja, HTML, CSS e JavaScript puros, este projeto apresenta os fundamentos para você poder começar de forma produtiva.
 
-## Visualizando no StackBlitz
-
-Este projeto pode ser executado, visualizado e até editado _online_. [Abrir no StackBlitz ⚡️](https://stackblitz.com/edit/cps-elements-example-rollup)
+> **Dica:** Embora a utilização do Rollup para uma aplicação Web seja possível, conforme este exemplo demonstra, o [Vite](https://vitejs.dev/) é uma alternativa mais moderna e recomendada, construído por cima do próprio Rollup e já trazendo um conjunto completo de configurações e recursos para aplicações Web modernas, como suporte a TypeScript e a _frameworks_ JavaScript _out-of-the-box_.
 
 ## Executando manualmente este projeto
 
