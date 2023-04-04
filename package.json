@@ -1,7 +1,9 @@
 {
-  "name": "rollup-starter",
-  "private": true,
+  "name": "cps-elements-example-rollup",
+  "description": "Um modelo de configuração mínima demonstrando como importar componentes CPS Elements com Rollup como empacotador do projeto.",
+  "author": "Erick Eduardo Petrucelli <erickpetru@gmail.com>",
   "version": "0.1.7",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "rollup -c -w",
