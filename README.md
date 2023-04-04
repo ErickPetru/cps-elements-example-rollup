@@ -8,7 +8,7 @@ Em sua versão 3, o Rollup avançou no suporte a [módulos JavaScript](https://d
 
 Assim, este exemplo foca em demonstrar um conjunto opinativo de configurações uteis no [rollup.config.js](./rollup.config.js), tanto para desenvolvimento quanto para publicação de aplicações com Rollup 3, contendo diversos ajustes sobre carregamento de HTML, CSS, SVG, bem como o empacotamento JavaScript.
 
-Opcionalmente, recursos podem carregados pela instalação local com o _bundler_ ao invés de serem carregados por CDN. Para tal, a única configuração Rollup necessária é copiar os ícones de `node_modules/@cps-elements/web/assets` para `dist/assets` da distribuição empacotada, através do `rollup-plugin-copy`.
+_Opcionalmente_, recursos podem carregados pela instalação local ao invés de serem carregados por CDN. Para tal, a única configuração extra necessária é copiar os ícones de `node_modules/@cps-elements/web/assets` para `dist/assets` da distribuição empacotada, através do `rollup-plugin-copy`.
 
 Observe que Rollup pode ser usado com _frameworks_ JavaScript, onde configurações extras podem ser necessárias. Mas para utilização com Web nativa, ou seja, HTML, CSS e JavaScript puros, este projeto apresenta os fundamentos para você poder começar de forma produtiva.
 
